@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence"	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
+	version="2.0">
+	<persistence-unit name="default">
+		<!-- RDB와 매핑될 오브젝트인 엔티티 클래스들을 직접 지정할 수 있다. -->
+		<class>springbook.learningtest.spring.jpa.Member</class>
+		<!-- 엔티티 클래스를 자동스캔하지 않도록 지정한다. 이 태그를 제거하면 클래스패스에서
+			@Entity 애노테이션이 붙은 모든 클래스를 자동등록한다. -->
+		<exclude-unlisted-classes />
+
+	</persistence-unit>
+</persistence>
